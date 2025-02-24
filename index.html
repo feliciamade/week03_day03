@@ -27,24 +27,31 @@
             <div class="assignmentBlock">
                 <h1>Fade-out</h1>
                 <h1 id="ninjaEmoji">🥷🏼</h1>
-                <button onclick="fadeOut()">Click me</button>
+                <button 
+                onclick='
+                let ninjaEmojihtml = document.getElementById("ninjaEmoji");
+                ninjaEmojihtml.className="fadeOut";'
 
-            </div>
+                >Click me</button>
             <div class="assignmentBlock">
                 <h1>Slide</h1>
                 <h1 id="yogaEmoji">🧘🏾‍♀️</h1>
-                <button onclick="slideYoga()">Slide Yoga!</button>
+                <button 
+                onclick='
+                let yogaEmojihtml = document.getElementById("yogaEmoji");
+                yogaEmojihtml.className="slide";'
+
+                >Click me</button>
             </div>
             <div class="assignmentBlock">
                 <h1>Grow</h1>
                 <h1 id="smileyEmoji">😀</h1>
-                <button
-                    onclick='
-                    //*** YOUR JAVASCRIPT CODE HERE ***
-                    //Assign the grow class to the HTML element with the smiley emoji
+                <button 
+                onclick='
+                let yogaEmojihtml = document.getElementById("smileyEmoji");
+                yogaEmojihtml.className="grow";'
 
-
-                    '>Click me</button>
+                >Click me</button>
             </div>
             <h3>The following exercises will be more intricate.</h3>
             <div class="assignmentBlock">
@@ -117,16 +124,6 @@
 
 <script>
 
-function fadeOut() {
-  let ninja = document.getElementById("ninjaEmoji");
-
-  if (ninja.style.opacity === "0") {
-    ninja.style.opacity = "1";
-  } else {
-    ninja.style.opacity = "0";
-  }
-  ninja.style.transition = "opacity 0.5s";
-}
 
 </script>
 </body>
