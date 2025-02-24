@@ -2,6 +2,52 @@
 <html>
 
 <style>
+
+    * {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        padding: 0;
+    
+    }
+
+    body {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbar {
+        width:60%;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-image {
+        background-image: url(puppeteer.png);
+        background-position: center;
+        width:90%;
+        height:200px;
+        border-radius: 30px;
+
+    }
+
+    #title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+    img {
+        border-radius: 30px;
+        flex-direction: column;
+    }
     /* FadeOut Animation */
     @keyframes fadeOut {
         0% { opacity: 1; }
@@ -64,14 +110,24 @@
 
 <body>
     <div id="navbar">
-        <h1>😃</h1><h1>😃</h1><h1>😃</h1><h1>😃</h1>
-        <h1 id="title">
-            The Puppet Master
-        </h1>
-        <h1>😎</h1><h1>😎</h1><h1>😎</h1><h1>😎</h1>
+        <div class="hero-image">
+
+        </div>
+        <div class="title">
+            
+            <h1 id="title">
+                The Puppet Master
+            </h1>
+
+            <p>For this assignment you will make emojis perform an action when a "click" event happens on the webpage. (The keyframe and css blocks for the animations are already written and can be found at the top of index.html)</p>
+           
+        </div>
+
+        
+
+
     </div>
     <div id="content">
-        <img id="puppeteer" src="puppeteer.png" />
         <div id="assignmentBlocks">
             <div class="assignmentBlock">
                 <h1>Fade-out</h1>
